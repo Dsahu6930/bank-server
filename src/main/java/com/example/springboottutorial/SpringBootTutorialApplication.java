@@ -4,11 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 @SpringBootApplication
 @RestController
 public class SpringBootTutorialApplication {
@@ -40,29 +35,4 @@ public class SpringBootTutorialApplication {
 }
 
 // Simple model class for POST data
-@Entity
-class User {
-
-    private String name;
-    private String email;
-
-    // getters & setters
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }

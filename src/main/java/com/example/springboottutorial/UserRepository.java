@@ -1,4 +1,4 @@
-package com.example.springboottutorial.repository;
+package com.example.springboottutorial;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.springboottutorial.User;
